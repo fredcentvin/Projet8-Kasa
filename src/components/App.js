@@ -1,5 +1,6 @@
 import Header from './Header'
 import Footer from './Footer'
+import Main from './Main'
 import '../style/App.css'
 import { BrowserRouter } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Header /> 
     <Footer /> 
+    <Main />
     </>
     </BrowserRouter>
   )
