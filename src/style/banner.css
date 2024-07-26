@@ -1,7 +1,10 @@
 .Kas-banner {
+    display: flex;
+    justify-content: center;
+    
     margin: auto;
     width: 80%;
-    height: 120px;
+    height: 80px;
     border-radius:10px;
     border: solid 2px black;
 }

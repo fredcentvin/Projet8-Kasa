@@ -1,7 +1,7 @@
 
 
 .Kas-footer {
-    position:absolute;
+    position:relative;
     display: grid;
     padding: 10px;
     justify-content: center;
