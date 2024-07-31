@@ -1,6 +1,6 @@
 import Card from './Card'
 import Banner from './Banner'
-import '../style/Main.css'
+// import './style/Main.css'
 
 function displayLoc () {
 return (

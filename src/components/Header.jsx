@@ -1,5 +1,5 @@
 import logo from '../assets/images/logos/logo_red.png'
-import '../style/Header.css'
+import '../style/header.css'
 
 
 
