@@ -1,13 +1,17 @@
-
+import { NavLink } from "react-router-dom"
+import '../style/error.css'
 
 
 
 function Error () {
     return (
-        <div>
-          
-            <h1>Oups! La page que vous demandez n'éxiste pas.</h1>
-          
+        <div className="errorText">
+            <h1>404</h1>
+            <h2>Oups! La page que vous demandez n'éxiste pas.</h2>
+          <NavLink to="/">
+          <h3>Retournez sur la page d'accueil</h3>
+          </NavLink>
+
         </div>
     )
 }

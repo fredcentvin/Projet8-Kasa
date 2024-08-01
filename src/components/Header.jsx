@@ -1,19 +1,25 @@
 import logo from '../assets/images/logos/logo_red.png'
 import '../style/header.css'
+import { Link, NavLink} from 'react-router-dom'
+ 
 
 
 
-function Header () {
-    const title = 'A propos'
-    const lienhome = 'Accueil'
+function Header() {
     return(
-        <div className='Kas-header'>
+        <nav className='Kas-header'>
+            <Link to="/">
             <img src={logo} alt='Kasa' className='Kas-logo'/>
+            </Link>
             <div className='Kas-nav'>
-                <h2 className='Kas-home'>{lienhome}</h2>
-                <h2 className='Kas-title'>{title}</h2>
+                <NavLink to="/">
+                <h2 className='Kas-home'>Accueil</h2>
+                </NavLink>
+                <NavLink to ="/Apropos">
+                <h2 className='Kas-title'>A propos</h2>
+                </NavLink>
             </div>
-        </div>
+        </nav>
     )
 }
 export default Header

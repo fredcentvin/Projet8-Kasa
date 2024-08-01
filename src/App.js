@@ -5,7 +5,7 @@ import Apropos from './pages/Apropos'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './style/app.css'
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element ={<Home/>} />
           <Route path="/Infoslodging" element ={<Infoslodging/>} />
           <Route path="/Apropos" element ={<Apropos/>} />
-          <Route path="/Error" element ={<Error/>} />
+          <Route path="*" element ={<Error/>} />
         </Routes>
       </div>
         <Footer />

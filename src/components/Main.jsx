@@ -1,5 +1,5 @@
 import Card from './Card'
-import Banner from './Banner'
+import Banner from './Bannerhome'
 // import './style/Main.css'
 
 function displayLoc () {
