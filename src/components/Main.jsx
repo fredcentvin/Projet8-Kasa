@@ -1,4 +1,4 @@
-import Card from './Card'
+// 
 import Banner from './Bannerhome'
 // import './style/Main.css'
 
@@ -8,8 +8,8 @@ return (
     <div>
         <Banner />
     </div>
-    <div className='gridMain'>
-        <Card />
+    <div className='displayLoc'>
+        
     </div>
     </>
 )
