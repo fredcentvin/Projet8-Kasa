@@ -6,7 +6,7 @@ import arrayLocs from '../assets/datas/bdLocations';
 import Collapse from '../components/Collapse'
 import Rating from '../components/Rating'
 import Slider from '../components/Slider'
-// import '../style/infoslodging.css'
+import '../style/infoslodging.css'
 
 
 
@@ -28,47 +28,47 @@ import Slider from '../components/Slider'
             if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
             return (<Error />);
             } 
-   const data = [
-    {
-       title: 'Description',
-       text: logement.description
-    },
-    {
-       title: 'Equipements',
-       // Créer une liste avec les équipements
-       text: logement.equipments.map(equipment => (
-          <p className='TextCollapse' key={equipment}>{equipment}</p>
-       ))
-    }
- ]
-         return ( 
- <>
- {logement.pictures && <Slider images={logement.pictures} />}
+const data = [
+   {
+      title: 'Description',
+      text: logement.description
+   },
+   {
+      title: 'Equipements',
+      // Créer une liste avec les équipements
+      text: logement.equipments.map(equipment => (
+         <p className='TextCollapse' key={equipment}>{equipment}</p>
+      ))
+   }
+]
+      return ( 
+<>
+{logement.pictures && <Slider images={logement.pictures} />}
 
-      <section className='ContInfo'>
+   <section className='ContInfo'>
 
-         <div className='ContInfoLogement'>
-            <h1 className='TittleInfo'>{logement.title}</h1>
-            <p className='TextInfo'>{logement.location}</p>
-            <ul className='TagUl'>
-               {logement.tags.map(tag => (
-                  <li className='TagLi' key={tag}>{tag}</li>
-               ))}
-            </ul>
-            </div>
+      <div className='ContInfoLogement'>
+         <h1 className='TittleInfo'>{logement.title}</h1>
+         <p className='TextInfo'>{logement.location}</p>
+         <ul className='TagUl'>
+            {logement.tags.map(tag => (
+               <li className='TagLi' key={tag}>{tag}</li>
+            ))}
+         </ul>
+         </div>
 
-    <div className='ContInfoOwner'>
-       <div className='TEST'>
-          <p className='TextInfoOwner'>{logement.host.name}</p>
-          <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
-       </div>
+   <div className='ContInfoOwner'>
+      <div className='TEST'>
+         <p className='TextInfoOwner'>{logement.host.name}</p>
+         <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
+      </div>
 
-       <Rating rating={logement.rating} />
-    </div>
+      <Rating rating={logement.rating} />
+   </div>
 
- </section>
+</section>
 
- <Collapse data={data}/>
+<Collapse data={data}/>
 
 </>
 );   

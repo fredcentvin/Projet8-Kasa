@@ -25,14 +25,14 @@ function Collapse({ data }) {
   }
 
   const numCollapses = data.length
-  const containerClass = numCollapses === 2 ? 'CollapseHomeTwo' : 'CollapseHome'
+  const containerClass = numCollapses === 2 ? 'gridCollapse' : 'CollapseHome'
 
   return (
     <div className={containerClass}>
       {data.map((collapse, index) => (
-        <div className="ContCollapse" key={index}>
-          <div className="TittleCont" onClick={() => toggleCollapse(index)}>
-            <h3 className='TittleCollapse'>{collapse.title}</h3>
+        <div className="containerCollapse" key={index}>
+          <div className="containerTitle" onClick={() => toggleCollapse(index)}>
+            <h3 className='collapseTitle'>{collapse.title}</h3>
             {openIndexes.includes(index) ? (
               <img src={arrow_up} alt="Arrow" />
             ) : (
@@ -41,7 +41,7 @@ function Collapse({ data }) {
           </div>
           
           {openIndexes.includes(index) && (
-            <div className="TextCollapse">{collapse.text}</div>
+            <div className="collapseText">{collapse.text}</div>
           )}
         </div>
       ))}

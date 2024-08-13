@@ -22,22 +22,22 @@ function Slider({ images }) {
 
 
    return (
-      <section className='ContSlider'>
+      <section className='containerSlider'>
          
          {images.length > 1  // Si il n'y a qu'une seul image, on n'affiche seulement l'image
          &&
          <> 
             {/* // Affiche le compteur d'image */}
-            <p className='CountSlider'>{currentIndex + 1} / {images.length}</p> 
+            <p className='countSlider'>{currentIndex + 1} / {images.length}</p> 
             
             {/* // Affiche les fleches de navigation, au click on passe a l'image suivante ou precedente */}
-            <img className='ArrowSliderLeft' src={arrow_right} alt="Flèche gauche" onClick={nextImage} />
-            <img className='ArrowSliderRight' src={arrow_left} alt="Flèche droite" onClick={prevImage} /> 
+            <img className='arrowSliderRight' src={arrow_right} alt="Flèche droite" onClick={nextImage} />
+            <img className='arrowSliderLeft' src={arrow_left} alt="Flèche gauche" onClick={prevImage} /> 
          </>
          }
          
          {/* // Affiche l'image actuelle en fonction de l'index */}
-         <img className='ImgSlider' src={images[currentIndex]} alt="Logement" /> 
+         <img className='imgSlider' src={images[currentIndex]} alt="Logement" /> 
 
 
       </section>

@@ -1,16 +1,31 @@
+// IMPORTS
+// import './apropos.css'
+
+// COMPONENTS
+import Collapse from '../components/Collapse'
+
+// ASSETS
 import Bannerinfos from './Bannerinfos'
-import Collapse from './Collapse'
+
+import collapseInfos from '../assets/datas/bdInfos.json'
 
 
-function Infos () {
-return (
-    <>
-    <Bannerinfos />
-    <div className='collapseInfos'>
-    <Collapse />
-    </div>
-    </>
-)
+// Page Apropos > Contient une bannière et le composant Collapsehome
+function Apropos() {
+   return (
+      <section>
+         <Bannerinfos />
+         <Collapse data={collapseInfos} />
+      </section>
+   )
+ }
+ 
+ export default Apropos
 
-}
-export default Infos
+
+
+
+
+
+
+
