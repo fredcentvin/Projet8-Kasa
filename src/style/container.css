@@ -11,11 +11,9 @@
 }
 
 .card_img  {
-    /* width: 350px; */
     height: 350px;
     object-fit: cover;
     border-radius: 12px;
-  
 }
 
 .Kas_card {

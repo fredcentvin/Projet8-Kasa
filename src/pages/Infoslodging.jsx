@@ -58,7 +58,7 @@ const data = [
          </div>
 
    <div className='ContInfoOwner'>
-      <div className='TEST'>
+      <div className='Owner'>
          <p className='TextInfoOwner'>{logement.host.name}</p>
          <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
       </div>

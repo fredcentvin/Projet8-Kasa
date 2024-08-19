@@ -1,8 +1,6 @@
 .Kas-banner {
     display: flex;
     justify-content: center;
-    /* margin: 30px auto ; */
-    /* width: 90%; */
     height: 150px; 
     margin-bottom: 40px;
 }
@@ -26,7 +24,7 @@
     top: 11%;
     @media (max-width: 768px ){
        font-size: 34px;
-       top: 28%;
+       top: 10%;
      text-align: start;
        width: 60%;
     }

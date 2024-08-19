@@ -1,9 +1,6 @@
-
-// IMPORTS
 import { useState } from 'react'
 import '../style/collapse.css'
 
-// ASSETS
 import arrow_down from '../assets/images/arrow_down.png'
 import arrow_up from '../assets/images/arrow_up.png'
 

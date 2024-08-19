@@ -1,14 +1,17 @@
 .containerCollapse {
    font-size: 24px;
    margin: 40px auto;
-   border-radius: 10px;
-   width: 80%;
+   border-radius: 5px;
+   width: 85%;
+   @media(max-width: 768px){
+      width: 100%;
+   }
 }
 
 .containerTitle {
    background-color: #FF6060;
    padding: 10px 20px;
-   border-radius: 10px;
+   border-radius: 5px;
    display: flex;
    justify-content: space-between;
    align-items: center;

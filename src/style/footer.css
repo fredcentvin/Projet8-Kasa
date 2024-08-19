@@ -1,16 +1,13 @@
-
-
 .Kas-footer {
     position:relative;
     display: grid;
     padding: 10px;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: black;
     bottom: 0;
 }
-
 
 .Copyrightfooter {
     height: 20px;
@@ -19,7 +16,8 @@
 
 .Logofooter {
     padding-left: 100px;
-    width: 40%;
-    height: 50%;
-    padding-top: 20px;
+    width: 35%;
+    height: 40%;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }

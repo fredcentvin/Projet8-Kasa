@@ -1,6 +1,5 @@
-// 
 import Banner from './Bannerhome'
-// import './style/Main.css'
+
 
 function displayLoc () {
 return (
