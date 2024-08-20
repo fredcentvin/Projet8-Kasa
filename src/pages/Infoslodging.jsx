@@ -25,7 +25,7 @@ import '../style/infoslodging.css'
             }
             }, [id]);
 
-            if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
+            if (!logement) { 
             return (<Error />);
             } 
 const data = [
