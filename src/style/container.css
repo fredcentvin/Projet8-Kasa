@@ -1,4 +1,4 @@
-.gridMain {
+.gridCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,11 +10,7 @@
     padding-bottom: 20px;
 }
 
-.card_img  {
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-}
+
 
 .Kas_card {
     display: flex;
@@ -29,9 +25,3 @@ a {
     font-weight: 700;
 }
 
-.card_title {
-    width: 60%;
-    position: relative;
-    top: -50px;
-    left:10px
-}

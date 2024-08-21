@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom'
 
 import { useState, useEffect } from 'react';
 import arrayLocs from '../assets/datas/bdLocations';
-import Collapse from '../components/Collapse'
 import Rating from '../components/Rating'
 import Slider from '../components/Slider'
+import TagName from '../components/TagName'
 import '../style/infoslodging.css'
+import Collapse2 from '../components/Collapse2'
+
 
 
 
@@ -28,19 +30,8 @@ import '../style/infoslodging.css'
             if (!logement) { 
             return (<Error />);
             } 
-const data = [
-   {
-      title: 'Description',
-      text: logement.description
-   },
-   {
-      title: 'Equipements',
-      // Créer une liste avec les équipements
-      text: logement.equipments.map(equipment => (
-         <p className='TextCollapse' key={equipment}>{equipment}</p>
-      ))
-   }
-]
+            const tagsLogement = logement?.tags.map((tags, index) =>  <TagName key={index} tagText={tags} />)
+
       return ( 
 <>
 {logement.pictures && <Slider images={logement.pictures} />}
@@ -50,26 +41,26 @@ const data = [
       <div className='ContInfoLogement'>
          <h1 className='TittleInfo'>{logement.title}</h1>
          <p className='TextInfo'>{logement.location}</p>
-         <ul className='TagUl'>
-            {logement.tags.map(tag => (
-               <li className='TagLi' key={tag}>{tag}</li>
-            ))}
-         </ul>
-         </div>
-
-   <div className='ContInfoOwner'>
-      <div className='Owner'>
-         <p className='TextInfoOwner'>{logement.host.name}</p>
-         <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
+        
+         <div className="containerTags">
+          {tagsLogement}
+         </div>  
       </div>
 
-      <Rating rating={logement.rating} />
-   </div>
+      <div className='ContInfoOwner'>
+         <div className='Owner'>
+            <p className='TextInfoOwner'>{logement.host.name}</p>
+            <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
+         </div>
 
-</section>
+         <Rating rating={logement.rating} />
+      </div>
 
-<Collapse data={data}/>
-
+   </section>
+      <div className='containerCollapse'>
+         <Collapse2  title={"Description"} content={logement.description} />
+         <Collapse2  title={"Equipements"} content={logement.equipments.map(equipment => (<p className='TextCollapse' key={equipment}>{equipment}</p>))} />
+      </div>
 </>
 );   
 }

@@ -101,3 +101,28 @@
       margin-bottom: 0;
    }
 }
+
+.containerCollapse{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* margin-left: 50px; */
+   /* margin-right: 50px; */
+}
+
+.containerCollapse .collapseTitle{
+  width: 600px;
+  margin-left: 0;
+}
+
+.containerCollapse .collapseContent{
+   width: 600px;
+   padding: 10px 10px 10px 10px;
+
+}
+
+.containerTags {
+   display: flex;
+   flex-direction: row;
+   gap:20px;
+}
