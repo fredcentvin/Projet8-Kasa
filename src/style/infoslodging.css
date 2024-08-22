@@ -25,6 +25,7 @@
    margin: 0;
    @media (max-width: 768px) {
       font-size: 25px;
+      margin-left: 20px;
    }
 }
 
@@ -34,6 +35,7 @@
    font-size: 18px;
    @media (max-width: 768px) {
       font-size: 13px;
+      margin-left: 20px;
    }
 }
 
@@ -64,10 +66,11 @@
    align-items: flex-end;
    @media (max-width: 768px) {
       margin: 20px 0 0 0;
-      width: 100%;
+      width: 95%;
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+      padding-left: 20px;
    }
 }
 
@@ -77,8 +80,8 @@
    border-radius: 50%;
    margin: 0 0 0 30px;
    @media (max-width: 768px) {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
    }
 }
@@ -90,7 +93,7 @@
    @media (max-width: 768px) {
       width: 40px;
       font-size: 13px;
-}
+   }
 }
 
 .Owner{
@@ -102,27 +105,39 @@
    }
 }
 
-.containerCollapse{
+.containerCollapses{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   /* margin-left: 50px; */
-   /* margin-right: 50px; */
+   @media (max-width:768px){
+      flex-direction: column;
+      padding-left: 5px;
+  }
 }
 
-.containerCollapse .collapseTitle{
+.containerCollapses .collapseTitle{
   width: 600px;
   margin-left: 0;
+  @media (max-width:768px){
+      width:95%;
+  }
 }
 
-.containerCollapse .collapseContent{
+.containerCollapses .collapseContent{
    width: 600px;
    padding: 10px 10px 10px 10px;
-
+   @media (max-width: 768px){
+      width:95%
+   }
 }
 
 .containerTags {
    display: flex;
    flex-direction: row;
    gap:20px;
+   padding-top: 15px;
+   @media (max-width:768px){
+      gap:10px;
+      margin-left: 20px;
+   }
 }

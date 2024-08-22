@@ -13,10 +13,10 @@ function Header() {
             </Link>
             <div className='Kas-nav'>
                 <NavLink to="/">
-                <h2 className='Kas-home'>Accueil</h2>
+                <h2 className='Kas-home'>ACCUEIL</h2>
                 </NavLink>
                 <NavLink to ="/Apropos">
-                <h2 className='Kas-title'>A propos</h2>
+                <h2 className='Kas-title'>A PROPOS</h2>
                 </NavLink>
             </div>
         </nav>

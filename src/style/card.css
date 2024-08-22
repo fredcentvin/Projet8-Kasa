@@ -7,6 +7,10 @@
     width:360px;
     height: 360px;
     border-radius: 8px;
+    @media (max-width: 768px){
+        width:340px;
+        height:280px;
+    }
 }
 
 .card_title {

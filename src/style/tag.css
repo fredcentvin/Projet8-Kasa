@@ -9,6 +9,11 @@
     border-radius: 12px;
     padding-left: 40px;
     padding-right: 40px;
+    @media (max-width:768px){
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .tagText {

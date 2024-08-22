@@ -25,7 +25,7 @@
     @media (max-width: 768px ){
        font-size: 34px;
        top: 10%;
-     text-align: start;
+        text-align: start;
        width: 60%;
     }
 }

@@ -1,3 +1,5 @@
+
+
 .collapseTitle img {
    width:20px;
    justify-content: flex-end;
@@ -14,6 +16,9 @@
    background-color: #FF6060 ;
    justify-content:space-between;
    border-radius: 4px;
+   @media(max-width:768px){
+      width: 50%;
+   }
 }
 
 .collapseContent {

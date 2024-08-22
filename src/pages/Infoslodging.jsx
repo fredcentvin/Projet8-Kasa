@@ -57,7 +57,7 @@ import Collapse2 from '../components/Collapse2'
       </div>
 
    </section>
-      <div className='containerCollapse'>
+      <div className='containerCollapses'>
          <Collapse2  title={"Description"} content={logement.description} />
          <Collapse2  title={"Equipements"} content={logement.equipments.map(equipment => (<p className='TextCollapse' key={equipment}>{equipment}</p>))} />
       </div>
