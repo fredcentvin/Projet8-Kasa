@@ -1,0 +1,14 @@
+.gridCollapseInfos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.gridCollapseInfos .containerCollapses .collapseTitle{
+    width: 100%;
+    margin: 15px 0 15px 0;
+    @media(max-width: 768px){
+        
+    }
+}

@@ -6,7 +6,7 @@ return(
     <div className= 'Kas-banner'>
         <img src={banner} alt='côte rocheuse' />
         
-        <p>Chez vous partout et ailleurs</p>
+        <p>Chez vous, partout et ailleurs</p>
     </div>
 )
 }

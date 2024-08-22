@@ -12,12 +12,13 @@
    padding: 10px 10px 10px 10px;
    margin: 25px 0 25px 90px;
    color: white;
-   font-size: 18px;
+   font-size: 20px;
    background-color: #FF6060 ;
    justify-content:space-between;
    border-radius: 4px;
    @media(max-width:768px){
-      width: 50%;
+      width: 100%;
+      margin: 20px 0 20px 0;
    }
 }
 
@@ -29,16 +30,12 @@
    color:black;
    font-size: 17px;
    width: 85%;
+   @media(max-width:768px){
+      padding: 5px 10px 15px 10px;
+   }
 }
 
 .collapsetext p {
    padding: 0 0 5px 0;
 }
 
-.gridCollapse{
-   display: flex;
-   gap: 50px;
-   @media (max-width: 768px) {
-      display: block;
-   }
-}

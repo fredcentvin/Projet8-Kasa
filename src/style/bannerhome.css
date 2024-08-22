@@ -1,8 +1,12 @@
 .Kas-banner {
     display: flex;
     justify-content: center;
-    height: 150px; 
+    height: 200px; 
     margin-bottom: 40px;
+    @media(max-width: 768px){
+        height: 150px;
+        margin-bottom: 0;
+    }
 }
 
 .Kas-banner img {
@@ -21,11 +25,11 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 11%;
+    top: 18%;
     @media (max-width: 768px ){
-       font-size: 34px;
+       font-size: 30px;
        top: 10%;
-        text-align: start;
-       width: 60%;
+        justify-content: flex-start;
+       width: 70%;
     }
 }

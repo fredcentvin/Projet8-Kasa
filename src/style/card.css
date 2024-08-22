@@ -1,15 +1,22 @@
 .containerCard {
-    width: 360px;
+    width: 380px;
+    @media (max-width:768px){
+        width:320px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
 }
 
 .containerCard img{
     object-fit: cover;
-    width:360px;
+    width:380px;
     height: 360px;
     border-radius: 8px;
     @media (max-width: 768px){
-        width:340px;
+        width:320px;
         height:280px;
+        /* padding-left: 10px;
+        padding-right: 10px; */
     }
 }
 
@@ -20,4 +27,13 @@
     margin: 0;
     position: relative;
     top: -60px;
+    @media(max-width: 768px){
+        padding-left: 20px;
+    }
+}
+
+.gridCards a{
+ @media(max-width: 768px){
+    width:320px;
+ }
 }
