@@ -1,9 +1,10 @@
 .containerCard {
+    position:relative;
     width: 380px;
+    display: flex;
+    flex-direction: column;
     @media (max-width:768px){
-        width:320px;
-        /* padding-left: 10px;
-        padding-right: 10px; */
+        width:340px;
     }
 }
 
@@ -13,27 +14,32 @@
     height: 360px;
     border-radius: 8px;
     @media (max-width: 768px){
-        width:320px;
+        width:340px;
         height:280px;
-        /* padding-left: 10px;
-        padding-right: 10px; */
     }
 }
 
 .card_title {
-    width: 60%;
+    display: flex;
     font-size: 16px;
     padding-left: 10px;
     margin: 0;
     position: relative;
-    top: -60px;
+    bottom: 50px;
     @media(max-width: 768px){
-        padding-left: 20px;
+        width: 70%;
+        bottom: 50px;   
     }
 }
 
 .gridCards a{
  @media(max-width: 768px){
-    width:320px;
+    width:340px;
+    display: flex;
  }
+}
+
+figure{
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
