@@ -15,6 +15,7 @@
    background-color: #FF6060 ;
    justify-content:space-between;
    border-radius: 8px;
+   z-index:3;
    @media(max-width:768px){
       margin: 0 0 0 0;
       font-size: 16px;
@@ -28,21 +29,25 @@
    margin: 0;
    color:black;
    font-size: 17px;
-   transform: tanslateY(20px);
-   transition: transform 0.7s ease;
-   transition-delay: 0.2s;
+   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   opacity: 0;
    @media(max-width:768px){
       padding: 5px 10px 15px 10px;
       font-size: 14px;
    }
 }
 
+.collapseContent.open {
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.collapseContent.closed {
+   transform: translateY(-100%);
+   opacity: 0;
+}
+
 .TextCollapse {
    margin-top: 5px;
    margin-bottom: 5px;
-   transition: transform 0.7s ease;
-   transition-delay: 0.2s;
 }
-
-
-

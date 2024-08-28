@@ -2,28 +2,27 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 40px;
     justify-content: center;
     background: rgba(235, 233, 233, 0.359);
     margin:40px 40px 20px 40px;
     padding-top: 35px;
+    padding-bottom: 35px;
     @media(max-width: 768px){
         background: none;
         flex-direction: column;
         margin: 0 0 0 0;
-        gap:10px;
+        gap:20px;
         align-items:center;
         padding-top: 0;
     }
 }
 
 .Kas_card {
-    display: flex;
+    display: block;
     flex-direction: column;
-    margin: 0 20px 0 20px;
     @media(max-width: 768px){
         margin: 0 ;
-        width: 340px;
         align-items: center;
     }
 }

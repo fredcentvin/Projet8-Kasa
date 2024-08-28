@@ -3,11 +3,20 @@
     flex-direction: column;
     margin-left: 70px;
     margin-right: 70px;
-   justify-content: space-between;
-   gap: 20px;
+    justify-content: space-between;
+    gap: 20px;
    @media (max-width:768px){
     margin-left: 0;
     margin-right: 0;
    }
 }
 
+.gridCollapseInfos .containerCollapses{
+    display:flex;
+  width: 100%;
+    flex-direction: column;
+    @media(max-width:768px){
+       margin-left: 0; 
+       width: 100%;
+    }
+ }

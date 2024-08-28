@@ -108,12 +108,13 @@
    gap:80px;
    justify-content: space-between;
    @media (max-width:768px){
+      gap:30px;
       flex-direction: column;
       margin-left: 0;
   }
 }
 
-.containerCollapse2 .containerCollapses{
+ .containerCollapses{
    display:flex;
    width: 50%;
    flex-direction: column;
