@@ -9,9 +9,6 @@ import TagName from '../components/TagName'
 import '../style/infoslodging.css'
 import Collapse2 from '../components/Collapse2'
 
-
-
-
     function Logement() {
         const [logement, setLogement] = useState(null); 
         const { id } = useParams(); // Récupère l'id du logement dans l'url
