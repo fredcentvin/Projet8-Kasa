@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import '../style/error.css'
+import '../Style/error.css'
 
 
 

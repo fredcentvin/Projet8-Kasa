@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../style/slider.css'
+import '../Style/slider.css'
 
 import arrow_right from '../assets/images/arrow_right.png';
 import arrow_left from '../assets/images/arrow_left.png';
@@ -20,7 +20,7 @@ function Slider({ images }) {
    return (
       <section className='containerSlider'>
          
-         {images.length > 1  // Si il n'y a qu'une seul image, on n'affiche seulement l'image
+         {images.length > 1  // Si il n'y a qu'une seule image, on n'affiche seulement l'image
          &&
          <> 
             {/* // Affiche le compteur d'image */}

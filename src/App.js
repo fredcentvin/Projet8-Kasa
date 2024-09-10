@@ -1,10 +1,10 @@
-import Home from './pages/Home'
-import Infoslodging from './pages/Infoslodging'
-import Error from './pages/Error'
-import Apropos from './pages/Apropos'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import './style/app.css'
+import Home from './Pages/Home'
+import Infoslodging from './Pages/Infoslodging'
+import Error from './Pages/Error'
+import Apropos from './Pages/Apropos'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import './Style/app.css'
 import { Routes, Route } from 'react-router-dom';
 
 

@@ -3,11 +3,11 @@ import { useParams } from 'react-router-dom'
 
 import { useState, useEffect } from 'react';
 import arrayLocs from '../assets/datas/bdLocations';
-import Rating from '../components/Rating'
-import Slider from '../components/Slider'
-import TagName from '../components/TagName'
-import '../style/infoslodging.css'
-import Collapse2 from '../components/Collapse2'
+import Rating from '../Components/Rating'
+import Slider from '../Components/Slider'
+import TagName from '../Components/TagName'
+import '../Style/infoslodging.css'
+import Collapse2 from '../Components/Collapse2'
 
     function Logement() {
         const [logement, setLogement] = useState(null); 

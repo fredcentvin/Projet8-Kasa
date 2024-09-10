@@ -1,6 +1,6 @@
 // import { Link } from 'react-router-dom'
-import Main from '../components/Main'
-import Container from '../components/Container'
+import Main from '../Components/Main'
+import Container from '../Components/Container'
 
 function Home () {
     return (

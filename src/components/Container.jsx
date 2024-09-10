@@ -1,7 +1,7 @@
 import arrayLocs from '../assets/datas/bdLocations'
 import { Link } from 'react-router-dom';
-import '../style/container.css'
-import Card from '../components/Card'
+import '../Style/container.css'
+import Card from '../Components/Card'
 
 function Body() { 
 

@@ -1,4 +1,4 @@
-import Infos from '../components/Infos'
+import Infos from '../Components/Infos'
 
 
 function Apropos () {

@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-import '../style/collapse.css'
+import '../Style/collapse.css'
 import arrow_down from '../assets/images/arrow_down.png'
 
 
