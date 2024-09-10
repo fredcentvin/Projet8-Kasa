@@ -1,6 +1,6 @@
 import logo from '../assets/images/logos/logo_white.png'
 import copyright from '../assets/images/logos/image.png'
-import '../Style/footer.css'
+import '../Style/Footer.css'
 
 function Footer () {
     return(

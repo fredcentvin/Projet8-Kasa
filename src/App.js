@@ -4,7 +4,7 @@ import Error from './Pages/Error'
 import Apropos from './Pages/Apropos'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import './Style/app.css'
+import './Style/App.css'
 import { Routes, Route } from 'react-router-dom';
 
 

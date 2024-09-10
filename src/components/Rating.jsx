@@ -1,6 +1,6 @@
 import star_active from '../assets/images/star_active.png'
 import star_inactive from '../assets/images/star_inactive.png'
-import '../Style/rating.css'
+import '../Style/Rating.css'
 
 function Rating({ rating }) { 
     const stars = []; 

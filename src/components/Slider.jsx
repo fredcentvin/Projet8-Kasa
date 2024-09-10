@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../Style/slider.css'
+import '../Style/Slider.css'
 
 import arrow_right from '../assets/images/arrow_right.png';
 import arrow_left from '../assets/images/arrow_left.png';

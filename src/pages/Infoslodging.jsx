@@ -6,7 +6,7 @@ import arrayLocs from '../assets/datas/bdLocations';
 import Rating from '../Components/Rating'
 import Slider from '../Components/Slider'
 import TagName from '../Components/TagName'
-import '../Style/infoslodging.css'
+import '../Style/Infoslodging.css'
 import Collapse2 from '../Components/Collapse2'
 
     function Logement() {

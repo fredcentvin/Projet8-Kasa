@@ -1,4 +1,4 @@
-import '../Style/card.css'
+import '../Style/Card.css'
 
 function Card({ id, cover, title }) {
     return (

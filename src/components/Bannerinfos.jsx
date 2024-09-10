@@ -1,4 +1,4 @@
-import '../Style/bannerhome.css'
+import '../Style/Bannerhome.css'
 import banner from '../assets/images/montagnes.png'
 
 function Bannerinfos () {
